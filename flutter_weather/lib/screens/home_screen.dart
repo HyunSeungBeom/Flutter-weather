@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_wheather/widgets/weather_card.dart';
 import '../utils/constants.dart';
 import '../models/weather_model.dart';
-import 'forecast_screen.dart'; // 이곳에 WeatherModel import
+import 'forecast_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
