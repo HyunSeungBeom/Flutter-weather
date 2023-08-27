@@ -39,24 +39,25 @@ class ForecastScreen extends StatelessWidget {
             children: [
               Text(
                 'Date: ${weatherData.date}',
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 'Temperature: ${weatherData.temperature}°C',
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 'Description: ${weatherData.weatherDescription}',
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   // TODO: Implement button functionality
                 },
-                child: Text('See Details'),
+                child: const Text('See Details'),
               ),
             ],
           ),
