@@ -38,7 +38,7 @@ class ForecastScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Date: ${weatherData.date}',
+                'Date: ${DateTime.now()}',
                 style:
                     const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),

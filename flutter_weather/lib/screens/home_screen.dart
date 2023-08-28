@@ -25,13 +25,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _fetchWeatherData() async {
     try {
-      final apiData =
-          await weatherApi.getWeatherByCity('YOUR_CITY_NAME'); // 수정 필요
+      final apiData = await weatherApi.getWeatherByCity('Seoul');
       setState(() {
         final mainData = apiData['main'];
         var weatherData = apiData['weather'][0];
 
         weatherData = Weather(
+          date: DateTime.now(),
           temperature: mainData['temp'].toDouble(),
           weatherDescription: weatherData['description'],
         );
@@ -60,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               }
             },
-            child: WeatherCard(),
+            child: WeatherCard(weather: weatherData!),
           ),
         ],
       ),

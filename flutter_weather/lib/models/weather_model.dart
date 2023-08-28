@@ -1,5 +1,5 @@
 class Weather {
-  final String date;
+  final DateTime date;
   final double temperature;
   final String weatherDescription;
 

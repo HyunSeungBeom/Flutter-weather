@@ -2,13 +2,9 @@ import 'package:flutter/material.dart';
 import '../models/weather_model.dart';
 
 class WeatherCard extends StatelessWidget {
-  final Weather weather = Weather(
-    date: '2023-08-17',
-    temperature: 25,
-    weatherDescription: 'Sunny',
-  );
+  final Weather weather;
 
-  WeatherCard({super.key});
+  WeatherCard({required this.weather});
 
   @override
   Widget build(BuildContext context) {
