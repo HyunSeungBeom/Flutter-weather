@@ -13,7 +13,7 @@ class WeatherApi {
       final jsonData = json.decode(response.body);
       return jsonData;
     } else {
-      throw Exception('Failed to load weather data');
+      throw Exception('Failed to load weather data'); 
     }
   }
 }
