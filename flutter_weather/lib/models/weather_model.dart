@@ -7,5 +7,5 @@ class Weather {
     required this.date,
     required this.temperature,
     required this.weatherDescription,
-  });
+  }); 
 }
