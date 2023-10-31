@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   final WeatherApi weatherApi = WeatherApi();
 
-  Weather? weatherData;
+  Weather? weatherData; 
 
   @override
   void initState() {
